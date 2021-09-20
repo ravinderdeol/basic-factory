@@ -24,7 +24,7 @@ contract GradeFactory is GradeStorage {
         GradeStorage(address(gradeStorageArray[_index])).storeGrade(_grade);
     }
     
-    // function allows the entering of an index and returns the grade
+    // function to allow the entering of an index and return the grade
     function getGradeFactory(uint256 _index) public view returns (uint256) {
         return GradeStorage(address(gradeStorageArray[_index])).readGrade();
     }
